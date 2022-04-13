@@ -1,0 +1,1204 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+    color: #303133;
+}
+
+body {
+    background: white;
+    min-height: 1500px;
+}
+
+/* header */
+
+header section h1 {
+    font-family: 'Cabin', sans-serif;
+    text-shadow: 1px 1px 2px rgb(67, 64, 64);
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.6s;
+    align-items: center;
+    margin-bottom: -100px;
+    height: 70px;
+    
+}
+
+nav.sticky {
+    background: #5bdbb5;
+    z-index: 100000;
+    opacity: 0.9;
+    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.35);
+    height: 70px;
+}
+
+.logo img {
+    height: 90px;
+    margin-left: 18px;  
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 70px;
+    margin-top: 18px;
+    margin-bottom: 1em;
+    
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+nav ul li a:hover{
+    color: #8854d0;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.79), 0 0 25px #fff, 0 0 5px rgb(255, 255, 255);
+    
+}
+
+.topRedes {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    
+}
+
+.topRedes a i{
+    font-size: 20px;
+    color: #fff;
+    padding-right: 30px;
+    margin-left: -25px;
+    margin-right: 20px;  
+}
+
+.topRedes a i:hover{
+    color: #8854d0;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.79), 0 0 25px #fff, 0 0 5px rgb(255, 255, 255);
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header section:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15px;
+    background: linear-gradient(to top, white, transparent);
+    z-index: 10000;
+    
+}
+
+.textHeader {
+    position: relative;
+    color: #fff;
+    font-size: 10em;
+    bottom: -10px;
+    right: 7px;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imgGirl {
+    z-index: 2;
+}
+
+/* MenuMovil */
+
+.menuMovil {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    justify-content: space-between;
+    transition: 0.6s;
+    align-items: center;
+    height: 70px;
+}
+
+.barsMenu {
+    cursor: pointer;
+    font-size: 30px;
+    
+}
+
+.barsMenu i {
+    color: #fff;
+    margin-right: 30px;
+}
+
+.slideMenu {
+    position: fixed;
+    top: 70px;
+    left: -80%;
+    background: #5bdbb5;
+    text-align: center;
+    padding: 20px 36px;
+    width: 80%;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.activeSlide {
+    left: 0;
+}
+
+.menuMovil .topRedesMovil {
+    justify-content: center;
+    margin-left: 100px;
+}
+
+
+.menuMovil ul{
+    display: block;
+}
+
+.menuMovil ul li {
+    border-top: 1px solid #fff;
+    justify-content: center;
+    padding: 10px;
+}
+
+.navContact{
+    margin-right: 48px;    
+}
+
+
+/* Fin MenuMovil */
+/* header fin */
+
+
+/* Conoce */
+.conoce {
+    padding: 20px ;
+    margin-top: -20px;
+}
+
+.conoce h2 {
+    color: #8854d0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex: wrap;
+    
+}
+
+.imgBici img{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+}
+
+.textConoce {
+    width: 100%;
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+.textConoce h2 {
+    font-size: 60px;
+    margin-bottom: 16px;
+}
+
+/* Fin conoce */
+
+/* video Verano - Invierno */
+
+.contentTitle {
+    position: absolute;
+    top: 5px;
+    font-size: 30px; 
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgb(51, 49, 49);
+}
+
+.contentTitle h2 {
+    color: #8854d0;
+}
+
+.containerVideos {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1050px; 
+    margin-top: -50px; 
+    cursor: pointer;
+}
+
+.containerVideos .box {
+    position: relative;
+    width: 500px;
+    height: 420px;
+    background: #fff;
+}
+
+.containerVideos .box .videoBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.containerVideos .box .videoBox video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.containerVideos .box .contentBox {
+    position: absolute;
+    top: 110px;
+    bottom: 110px;
+    right: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #8854d079;
+    transition: transform 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+}
+
+.containerVideos .box:hover .contentBox {
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+  
+}
+
+.containerVideos .box .contentBox .content {
+    position: relative;
+    padding: 20px 60px;
+    
+}
+
+.containerVideos .box:hover .contentBox .content {
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+
+}
+
+.containerVideos .box .contentBox .content h2 {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgb(51, 49, 49);
+    
+}
+
+
+/* video Verano - Invierno  fin */
+
+/* slider Verano - Invierno */
+
+.actividades {
+    margin-top: -90px;
+    z-index: 10000;
+}
+
+.actiSlider {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    
+}
+
+.textActi {
+    display: flex;
+    flex-direction: column;
+    text-shadow: 1px 1px 1px rgb(16, 16, 16);
+    font-size: 40px;
+    background: #8854d0;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.textActi h2 {
+    color: #fff;
+}
+
+.slider{
+    display: flex;  
+    position: relative;
+    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.604);
+    padding-right: 800px;
+    overflow: hidden;
+}
+
+
+.slider .leftSlide, .slider .rightSlide {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #5bdbb5a3;
+    display: block;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    top: 50%;
+    margin-top: -20px;
+    text-align: center;
+    line-height: 40px;
+    transition: all .5s ease;
+}
+
+.slider .leftSlide {
+    margin-left: -20px;
+}
+
+.slider .rightSlide {
+    margin-right: -20px;
+}
+
+.slider i {
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.slider .leftSlide i {
+    margin-right: 2px;
+
+}
+
+.slider .rightSlide i {
+    margin-left: 2px;
+
+}
+ 
+.slider .leftSlide:hover, .slider .rightSlide:hover {
+    background-color: #5bdbb5;
+    box-shadow: 0px 0px 10px black;
+
+}
+
+.slider .leftSlide {
+    left: 30px;
+    cursor: pointer;
+}
+
+.slider .rightSlide {
+    right: 30px;
+    cursor: pointer;
+}
+
+.slider .sliderItems .item {
+    display: none;
+}
+
+.slider .sliderItems .item img{
+    animation: zoom 1s ease;
+    
+}
+
+@keyframes zoom {
+    0% {
+      transform: scale(1.2);
+      opacity: 0
+    }
+  }
+
+.slider .sliderItems .item .caption p{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    font-size: 25px;
+    background-color: rgba(0,0,0,.5);
+}
+
+.slider .sliderItems .item.active {
+    display: block;
+}
+
+/* Actividades Verano - Invierno fin */
+
+/* Card Paseos */
+
+.custom-shape-divider-bottom-1647958401 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1647958401 svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 115px;
+}
+
+.custom-shape-divider-bottom-1647958401 .shape-fill {
+    fill: #8854d0;
+}
+
+.sectionCard {
+    background-color: #8854d0;
+}
+
+.titleCard {
+    font-size: 40px;
+    position: relative;
+    left: 30px;
+    margin-top: 50px;
+}
+
+.titleCard h2{
+   color: #fff;
+   text-shadow: 1px 1px 1px rgb(16, 16, 16);
+}
+
+.containerCard {
+    position: relative;
+    width: 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    bottom: -80px;
+    margin-top: -300px;
+    margin-bottom: -120px;
+}
+
+.containerCard .card {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 30px 10px;
+    padding: 20px 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.containerCard .card:hover {
+    height: 480px;   
+}
+
+.containerCard .card .imgCard {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: -5px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+
+.containerCard .card .imgCard img {
+    max-width: 100%;
+    border-radius: 4px;    
+}
+
+.containerCard .contentCard {
+    position: relative;
+    padding: 10px 15px;
+    text-align: center;
+    color: #303133;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    font-size: 16px;
+} 
+
+.containerCard .card:hover .contentCard {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -50px;
+    transition-delay: 0.3s;
+} 
+
+/* Card Paseos fin */
+
+/* Tabs */
+
+.custom-shape-divider-top-1647193531 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    margin-bottom: -100px;
+}
+
+.custom-shape-divider-top-1647193531 svg {
+    position: relative;
+    display: block;
+    width: calc(136% + 1.3px);
+    height: 80px;
+}
+
+.custom-shape-divider-top-1647193531 .shape-fill {
+    fill: #8854d0;
+}
+
+.arrive {
+    margin-top: 40px;
+    margin-bottom: -50px;
+}
+
+.titleArrive {
+    position: absolute;
+    top: 100px;
+    font-size: 30px;
+    text-align: center;    
+}
+
+.titleArrive h3 {
+    margin-top: 30px;
+    font-size: 26px;
+}
+
+.iconArrive {
+    display: flex;
+    list-style: none;
+    margin-top: -70px;
+}
+
+.iconArrive li {
+    padding: 30px;
+}
+
+
+.iconArrive a {
+    text-decoration: none;
+}
+
+.iconArrive span {
+    display: flex;
+    justify-content: center;
+    font-size: 25px; 
+    color: #303133;
+    transition: 1s ease 0s;
+    opacity: 0.57;
+    transition: opacity 1s ease 0s;
+      
+}
+
+
+.iconArrive img {
+    position: relative;
+    height: 90px;
+    margin-top: 100px;
+
+}
+
+.active span {
+    border-bottom: 2px solid #303133;
+    opacity: 1;
+
+}
+    
+.containerArrive > div {
+    visibility: hidden;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.active {
+    visibility: visible;
+}
+
+.contentArrive >div{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-left: 33px;
+    
+}
+
+
+/* Tabs fin */
+
+/* Contacto */
+.formContact {
+    background-image: url(../img/bariloche.jpg);
+    position: relative;  
+    background-size: cover;
+
+}
+
+.containerForm {
+    display: grid;
+    grid-template-columns: 400px 300px;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.824);
+    padding: 20px;
+    border-radius: 2px;
+}
+
+.contact {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+}
+
+.contact h3{
+    padding-top: 20px;
+
+}
+
+.formulario {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.formulario, .inputGroup {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.inputGroup input[type="text"], input[type="email"], textarea {
+    font-size: 16px;
+    color: #777;
+    width: 100%;
+    outline: none;
+    padding: 15px 0;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #49a489;
+    vertical-align: top;
+}
+
+.inputGroup input[type="text"]:hover, input[type="email"]:hover, textarea:hover {
+    border-bottom: 2px solid #5bdbb5;
+}
+
+textarea {
+    max-width: 100%;
+    max-height: 10.25rem;
+    min-height: 5.125rem;
+    min-width: 100%;
+}
+
+label {
+    color: #777;
+    
+}
+
+.label{
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-left: 1rem;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.activeForm {
+    top: -0.75rem;
+    margin-left: 0;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    color: #777;
+}
+
+.error {
+    position: absolute;
+    color: rgb(255,59,59);
+    font-size: 0.875rem;
+}
+
+input[type="submit"]{
+
+    background: #5bdbb5;
+    color: #fff;
+    border-radius: 2px;
+    border: 2px solid #5bdbb5;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 3.125rem;
+    padding: 0.9375rem;
+    width: 20%;
+    outline: none;
+    -webkit-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+
+}
+
+input[type="submit"]:hover {
+    background: #49a489;
+    border: 2px solid #49a489;
+}
+
+
+/* Fin Contacto */
+
+/* Footer */
+
+.custom-shape-divider-bottom-1647957361 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    margin-top: -69px;
+}
+
+.custom-shape-divider-bottom-1647957361 svg {
+    position: relative;
+    display: block;
+    width: calc(150% + 1.3px);
+    height: 69px;
+}
+
+.custom-shape-divider-bottom-1647957361 .shape-fill {
+    fill: #8854d0;
+}
+
+footer {
+    background-color: #8854d0;
+}
+
+footer h3, footer p {
+    color: #fff;
+}
+
+footer h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+
+}
+
+.containerFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;    
+}
+
+.socialMedia a i {
+    color: #fff;
+    font-size: 25px;
+    margin-top: 10px;
+    padding: 10px;    
+}
+
+.socialMedia a i:hover {
+    color: #5bdbb5;
+    -webkit-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background-color: #5bdbb5cd;
+    padding: 10px;
+}
+
+/* Fin footer */
+
+/* Media Queries */
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .video {
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .containerVideos {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .videoBox video {
+        padding-bottom: 20px; 
+
+    }
+
+    .actividades {
+        height: 100%;
+    }
+
+    .actiSlider {
+        display: flex;
+        flex-direction: column;      
+    }
+
+    .textActi {
+        margin-right: 0px;
+    }
+
+    .slider {
+        position: relative;
+        height: 430px;
+        margin-top: 30px;
+        padding-right: 0px;
+        margin-bottom: 50px;
+        margin: 2px;
+    }
+
+    .sectionCard {
+        height: 1000px;
+        
+    }
+
+    .titleCard {
+        position: absolute;
+        text-align: center;
+        height: 100%;
+        width: 90%;
+    }
+
+    .containerCard {
+        margin-top: -218px;
+    
+    }
+
+}
+
+@media (max-width: 860px){ 
+
+    .displayNone {
+        display: none;
+    }
+
+    .menuMovil {
+        display: flex;
+    }
+
+    header .textHeader{
+        font-size: 8em;
+        margin-bottom: 57px;
+    }
+
+   .imgGirl {
+        object-position: right;
+    }
+
+    .conoce {
+        margin-bottom: 90px;
+        height: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+    }
+
+    .textConoce {
+        margin-top: -40px;
+        margin-bottom: 40px;
+        text-align: justify; 
+    }
+
+    .video {
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .containerVideos {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .videoBox video {
+        padding-bottom: 20px; 
+
+    }
+
+    .actividades {
+        height: 100%;
+    }
+
+    .actiSlider {
+        display: flex;
+        flex-direction: column;      
+    }
+
+    .textActi {
+        margin-right: 0px;
+    }
+
+    .slider {
+        position: relative;
+        height: 430px;
+        margin-top: 30px;
+        padding-right: 0px;
+        margin-bottom: 50px;
+    }
+
+    .sectionCard {
+        height: 1000px;
+        
+    }
+
+    .titleCard {
+        position: absolute;
+        text-align: center;
+        height: 100%;
+        width: 90%;
+    }
+
+    .containerCard {
+        margin-top: -218px;
+    
+    }
+
+    .containerForm {
+    display: grid;
+    grid-template-columns: 377px 201px;
+    }
+
+
+}
+
+@media (min-width: 576px) and (max-width: 765px) { 
+
+    header .textHeader{
+        font-size: 6em;
+        margin-bottom: 80px;
+    }
+
+   .imgGirl {
+        object-position: right;
+    }
+
+    .textConoce {
+        padding: 9px;
+    }
+
+    .imgBici {
+        padding: 6px;
+    }
+
+    .contentTitle h2 {
+        font-size: 28px;
+    } 
+
+    .video {
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .containerVideos {
+        margin-top: 127px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .videoBox video {
+        padding-bottom: 20px; 
+
+    }
+
+    .contentTitle {
+        margin-left: 21px;
+    }
+
+    .containerVideos .box .contentBox {
+        right: 15px;
+    }
+
+    .sectionCard {
+        height: 1233px;
+        
+    }
+
+    .iconArrive img {
+        height: 50px;
+    }
+
+    .iconArrive li {
+        padding: 10px;
+    }
+
+    .containerArrive p {
+        padding: 38px;
+        margin-top: -22px;
+        margin-left: -85px;
+        
+    }
+
+    .containerForm {
+        display: grid;
+        grid-template-columns: 257px 182px;
+    }
+
+    input[type='submit']{
+        width: 100%;
+    }
+
+  
+}
+
+@media (min-width: 300px) and (max-width: 576px) { 
+
+    header .textHeader{
+        font-size: 4em;
+    }
+
+   .imgGirl {
+        object-position: right;
+    }
+
+    .textConoce {
+        padding: 9px;
+    }
+
+    .imgBici {
+        padding: 6px;
+    }
+
+    .contentTitle h2 {
+        font-size: 28px;
+        text-align: center;
+    }    
+
+    .containerVideos .box .videoBox {
+        left: 75px;
+        width: 70%;
+        height: 99%;
+    }  
+    
+    .containerVideos .box .contentBox .content h2 {
+        margin-left: 71px;
+    }
+
+    .textActi h2 {
+        font-size: 29px;
+        text-align: center
+    }
+
+    .sectionCard {
+        height: 1233px;
+        
+    }
+
+    .titleCard h2 {
+        font-size: 40px;
+        margin-left:-12px
+    }
+
+    .titleArrive {
+        font-size: 23px;
+     
+    }
+    
+    .titleArrive h3 {
+        font-size: 20px;
+    }
+
+    .iconArrive img {
+        height: 50px;
+    }
+
+    .iconArrive li {
+        padding: 10px;
+    }
+
+    .containerArrive > div {
+        margin-left: -22px;
+        
+    }
+    
+    .formContact {
+        height: 760px;
+    }    
+
+    .containerForm {
+        display: grid;
+        grid-template-columns: 257px;
+    }
+
+    .contact {
+        margin-top: -36px;
+    }
+
+    input[type='submit']{
+        width: 100%;
+    }
+
+  
+}
+
+/* Fin Media Queries */
